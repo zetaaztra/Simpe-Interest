@@ -1,13 +1,12 @@
-print("Enter the Principle Amount: ")
-p = float(input())
-print("Enter Rate of Interest (%): ")
+def calculateSI(a, b, c):
+    return (a*b*c)/100
+
+print(end="Enter the Amount: ")
+p = int(input())
+print(end="Enter the Rate of Interest: ")
 r = float(input())
-print("Enter Time Period: ")
+print(end="Enter the Time: ")
 t = float(input())
-si = (p*r*t)/100
+si = calculateSI(p, r, t)
+print("\nSimple Interest = " + str(si))
 
-print("\nSimple Interest Amount: ")
-print(si)
-
-print("\nSimple Interest Amount in months: ")
-print(si/(t*12))
